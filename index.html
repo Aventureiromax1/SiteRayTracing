@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/selector.css">
     <script src="https://kit.fontawesome.com/4ec170f2bb.js" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/selector.js"></script>
 </head>
 
 <body>
@@ -20,46 +21,74 @@
                 <li class="navLi"><span>Home</span><i class="fa-solid fa-house"></i></li>
                 <li class="navLi"><span>About</span><i class="fa-solid fa-file-lines"></i></li>
                 <li class="navLi"><span>Menu</span><i class="fa-solid fa-bars"></i></li>
-
             </ul>
             <hr>
         </nav>
-        <h1 id="headerTittle">RAY TRACING</h1>
+        <h1 id="headerTittle">Ray Tracing</h1>
         <a href="" id="headerKnowMore"><span id="knowMoreSpan">Saiba mais</span></a>
     </header>
     <main>
         <div id="mainContainer">
             <section id="aboutContent" class="mainContent">
                 <h1>Ray Tracing</h1>
-                    <div class="containerR">
-                        <iframe width="65%" height="100%"
-                            src="https://www.youtube.com/embed/reKTEm4Ej8s?autoplay=1&loop=1&controls=0&mute=1&disablekb=1&rel=0&showinfo=0&playlist=reKTEm4Ej8s"
-                            title="Cyberpunk 2077 Photorealistic Mods: You dont need a RTX 5090 for Ultra Realistic Graphics"
-                            frameborder="0" allow="autoplay;" class="hidden2" style="border-radius: 32px;"></iframe>
-                        <p>Ray tracing é uma técnica que simula como a luz real se comporta para criar imagens digitais.
-                            Ela
-                            "dispara" raios virtuais de luz pela cena e calcula como eles interagem com os objetos - se
-                            refletem, passam através ou são absorvidos.<br><br>
-                            Isso resulta em reflexos, sombras e iluminação muito mais realistas que os métodos tradicionais
+                <div class="containerR">
+                    <iframe width="65%" height="100%"
+                        src="https://www.youtube.com/embed/reKTEm4Ej8s?autoplay=1&loop=1&controls=0&mute=1&disablekb=1&rel=0&showinfo=0&playlist=reKTEm4Ej8s"
+                        title="Cyberpunk 2077 Photorealistic Mods: You dont need a RTX 5090 for Ultra Realistic Graphics"
+                        frameborder="0" allow="autoplay;" class="hidden2" style="border-radius: 32px;"></iframe>
+                    <p>Ray tracing é uma técnica que simula como a luz real se comporta para criar imagens digitais.
+                        Ela
+                        "dispara" raios virtuais de luz pela cena e calcula como eles interagem com os objetos - se
+                        refletem, passam através ou são absorvidos.<br><br>
+                        Isso resulta em reflexos, sombras e iluminação muito mais realistas que os métodos tradicionais
                         de renderização. É usado em filmes de animação e jogos modernos, mas exige muito poder
                         computacional para funcionar em tempo real.</p>
-                    </div>
+                </div>
 
 
 
             </section>
             <section id="worksContent" class="mainContent">
                 <h2>Como Funciona</h2>
+                <div class="modeBtns">
+                    <button type="button" class="modeBtn active" data-mode="raster">Rasterização</button>
+                    <button type="button" class="modeBtn" data-mode="rtx">Ray Tracing</button>
+                    <button type="button" class="modeBtn" data-mode="path">Path Tracing</button>
+                </div>
                 <div class="containerR">
                     <div class="containerC">
-                        <div id="selector1"></div>
-                        <div id="selector2"></div>
-                        <div id="selector3"></div>
-                        <div id="selector4"></div>
-                        <div id="selector5"></div>
-                        <div id="selector6"></div>
+                        <div id="selector1" onclick="SelectButton()">
+                            <i class="fa-solid fa-info"></i>
+                            <p>Introdução</p>
+                        </div>
+                        <div id="selector2" onclick="SelectButton()">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <p>O mundo 3D</p>
+                        </div>
+                        <div id="selector3" onclick="SelectButton()">
+                            <i class="fa-solid fa-shapes"></i>
+                            <p>Tudo são Triângulos</p>
+                        </div>
+                        <div id="selector4" onclick="SelectButton()">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            <p>Projeção para 2D</p>
+                        </div>
+                        <div id="selector5" onclick="SelectButton()">
+                            <i class="fa-solid fa-fill-drip"></i>
+                            <p>Preenchendo os Pixels</p>
+                        </div>
+                        <div id="selector6" onclick="SelectButton()">
+                            <i class="fa-solid fa-sun"></i>
+                            <p>Sombreamento</p>
+                        </div>
+                        <div id="selector7" onclick="SelectButton()">
+                            <i class="fa-solid fa-image"></i>
+                            <p>A Imagem Final</p>
+                        </div>
                     </div>
-                    <div id="contentBox"></div>
+                    <div id="contentBox">
+                        <p></p>
+                    </div>
                 </div>
             </section>
             <section id="usesContent" class="mainContent">
@@ -67,31 +96,53 @@
                 <br><br>
                 <h3>Video Games</h3>
                 <div class="containerR">
-                    <i class="fa-solid fa-arrow-left" onclick="blockNumberMinus()"></i>
-                    <div id="block1" class="block" alt="minecraft">
+                    <i class="fa-solid fa-arrow-left" onclick="blockNumberMinusGame()"></i>
+                    <a href="minecraft.html" id="block1" class="blockGame" alt="minecraft">
                         <img src="./img/blocks/Steve.png" id="steveImg" alt="Steve">
                         <img src="./img/blocks/pig.png" alt="pig" id="pigImg">
                         <img src="./img/blocks/Minecraft-Logo.png" alt="logo" id="logoImg">
-                    </div>
-                    <div id="block2" class="block" alt="cyberpunk">
+                    </a>
+                    <a id="block2" class="blockGame" alt="cyberpunk">
                         <img src="./img/blocks/cyberpunk.png" alt="cyberpunk" id="cyberpunkImg">
                         <img src="./img/blocks/Cyberpunk_2077_logo.svg.png" alt="Cyberpunk_2077_logo"
                             id="cyberpunkLogoImg">
-                    </div>
-                    <div id="block3" class="block" alt="mw2">
+                    </a>
+                    <a id="block3" class="blockGame" alt="mw2">
                         <img src="./img/blocks/mw2.png" alt="mw2" id="mwImg2">
                         <img src="./img/blocks/mwLogo.png" alt="mw1" id="mwImg1">
 
-                    </div>
-                    <div id="block4" class="block">
+                    </a>
+                    <a id="block4" class="blockGame">
                         <img src="./img/blocks/Gow.png" alt="Gow" id="gowImg">
                         <img src="./img/blocks/Gow1.png" alt="Gow1" id="gow1Img">
-                    </div>
-                    <div id="block5" class="block">
+                    </a>
+                    <a id="block5" class="blockGame">
                         <img src="./img/blocks/Rd2/rd2Back.jpeg" alt="rd2Back" id="rd2BackImg">
                         <img src="./img/blocks/Rd2/rd2Logo.png" alt="rd2Logo" id="rd2LogoImg">
-                    </div>
-                    <i class="fa-solid fa-arrow-right" onclick="blockNumberAdd()"></i>
+                    </a>
+                    <i class="fa-solid fa-arrow-right" onclick="blockNumberAddGame()"></i>
+                </div>
+                <h3>Filmes</h3>
+                <div class="containerR">
+                    <i class="fa-solid fa-arrow-left" onclick="blockNumberMinusMovie()"></i>
+                    <a href="" id="block6" class="blockMovie" alt="avatar">
+                        <img src="./img/blocks/avatar/avatarLogo.png" alt="avatarLogo" id="avatarLogoImg">
+                    </a>
+                    <a id="block7" class="blockMovie" alt="BladeRunner">
+                        <img src="./img/blocks/BladeRunner/Br2049Logo.png" alt="BladeRunnerLogo" id="brLogoImg">
+                    </a>
+                    <a id="block8" class="blockMovie" alt="avengers">
+                        <img src="./img/blocks/avengers/avengersLogo.png" alt="avengersLogo" id="avengersLogoImg">
+
+                    </a>
+                    <a id="block9" class="blockMovie" alt="interestellar">
+                        <img src="./img/blocks/interestellar/InterstellarLogo.png" alt="InterstellarLogo" id="interstellarLogoImg">
+                    </a>
+                    <a id="block10" class="blockMovie" alt="linKing">
+                        <img src="./img/blocks/lionKing/lionKingLogo.png" alt="linkingLogo" id="linkingLogoImg">
+
+                    </a>
+                    <i class="fa-solid fa-arrow-right" onclick="blockNumberAddMovie()"></i>
                 </div>
             </section>
         </div>
