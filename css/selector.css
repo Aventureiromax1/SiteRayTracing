@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
 }
+
 #worksContent [id^="selector"].large {
     color: #ffffff;
     font-size: 1em;
@@ -39,6 +40,7 @@
     gap: 10px;
     transition: 1s;
 }
+
 #worksContent [id^="selector"][class^="step"] {
     justify-content: flex-start;
     padding-left: 5%;
@@ -84,6 +86,7 @@
     filter: brightness(.8);
     z-index: 0;
 }
+
 #worksContent [id^="selector"].step6 {
     width: 50px;
     filter: brightness(.6);
@@ -102,8 +105,63 @@
     padding: 16px;
 }
 #worksContent #contentBox p {
-    font-size: 2em;
+    font-size: 1.8vw;
 }
+@media (max-width: 1000px) {
+    #worksContent #contentBox {
+        width: 100%;
+        height: 300px;
+    }
+
+    #worksContent #contentBox p {
+        font-size: 2.8vw;
+    }
+
+    #worksContent [id^="selector"].large {
+        width: 150px;
+        filter: brightness(2);
+        z-index: 2;
+    }
+
+    #worksContent [id^="selector"].step1 {
+        width: 130px;
+        filter: brightness(1.6);
+        z-index: 1;
+    }
+
+    #worksContent [id^="selector"].step2 {
+        width: 110px;
+        filter: brightness(1.4);
+        z-index: 0;
+    }
+
+    #worksContent [id^="selector"].step3 {
+        width: 90px;
+        filter: brightness(1.2);
+        z-index: 0;
+    }
+
+    #worksContent [id^="selector"].step4 {
+        width: 70px;
+        filter: brightness(1);
+        z-index: 0;
+    }
+
+    #worksContent [id^="selector"].step5 {
+        width: 60px;
+        filter: brightness(.8);
+        z-index: 0;
+    }
+
+    #worksContent [id^="selector"].step6 {
+        width: 50px;
+        filter: brightness(.6);
+        z-index: 0;
+    }
+
+}
+
+
 
 .modeBtns {
     display: flex;
@@ -111,6 +169,7 @@
     gap: 16px;
     margin-bottom: 16px;
 }
+
 .modeBtn {
     padding: 8px 20px;
     border-radius: 8px;
@@ -121,6 +180,7 @@
     cursor: pointer;
     transition: 1s;
 }
+
 .modeBtn.active,
 .modeBtn:hover {
     background: #3a3a3a;
@@ -131,6 +191,7 @@
     transition: 1s;
     display: none;
 }
+
 #worksContent [id^="selector"].large p {
     transition: 1s;
     opacity: 1;
