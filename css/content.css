@@ -1,7 +1,10 @@
+@import url(https://db.onlinewebfonts.com/c/41cdafd19e156a1f74759f9c88b878ff?family=Google+Sans+Text+Regular);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Google Sans Text Regular', sans-serif;
 }
 
 body{
@@ -52,10 +55,14 @@ footer{
     position: relative;
     z-index: 0;
     box-sizing: content-box;
-    width: 45%;
+    width: 55%;
     padding: 16px;
     text-align: justify;
-    background-color: transparent;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 0, 0, 0, 0.18 );
     border-radius: 16px;
     line-height: 1.5;
 }
@@ -96,7 +103,6 @@ footer{
     z-index: -1;
     height: 100dvh;
     width: 100dvw;
-    filter: blur(3px);
     background-image: url(../img/games/minecraftIntro.png);
     background-size: cover;
     background-position: center 100%;
@@ -110,4 +116,32 @@ footer{
     height: 100%;
     width: 100%;
     background: linear-gradient(to top, #2a2a2a, transparent);
+}
+
+
+.navA{
+    all: unset;
+    position: relative;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    gap: 60px;
+    visibility: visible;
+    overflow: hidden;
+    transition: 0.5s;
+    color: gray;
+}
+
+.navA:hover {
+    cursor: pointer;
+    color: white;
+    gap: 10px;
+    transform: scale(1.1);
+    opacity: 1.0;
 }

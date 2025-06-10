@@ -2,7 +2,7 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-#block1{
+#block1 {
     position: relative;
     background-image: url(../img/blocks/Minecraft.jpg);
     background-size: cover;
@@ -11,21 +11,23 @@
     background-attachment: fixed;
 }
 
-#block1.center > img:nth-child(1), #block1.center img:nth-child(2){
+#block1.center>img:nth-child(1),
+#block1.center img:nth-child(2) {
     opacity: 1;
     transition: 1s;
     filter: drop-shadow(0 0 10px #00000080);
 }
-#block1.center img:nth-child(3){
+
+#block1.center img:nth-child(3) {
     opacity: 1;
     transition: 1s;
 }
 
-#block1:hover{
-    filter: blur(8px); 
+#block1:hover {
+    filter: blur(8px);
 }
 
-#block1 img:first-child{
+#block1 img:first-child {
     position: absolute;
     top: -10%;
     right: -10%;
@@ -35,17 +37,17 @@
     transition: 0.5s;
 }
 
-#block1 img:nth-child(2){
+#block1 img:nth-child(2) {
     position: absolute;
     bottom: -10%;
     left: -10%;
     width: 60%;
     opacity: 0;
-   
+
     transition: 0.5s;
 }
 
-#block1 img:nth-child(3){
+#block1 img:nth-child(3) {
     position: absolute;
     top: 0%;
     right: 0%;
@@ -55,7 +57,7 @@
     opacity: 0;
 }
 
-#block2{
+#block2 {
     position: relative;
     background-image: url(../img/blocks/cyberpunk.jpg);
     background-size: cover;
@@ -64,13 +66,13 @@
     background-attachment: fixed;
 }
 
-#block2.center > img:first-child{
+#block2.center>img:first-child {
     opacity: 1;
     transition: 1s;
     filter: drop-shadow(0 0 10px #00000080);
 }
 
-#block2.center > img:nth-child(2){
+#block2.center>img:nth-child(2) {
     position: absolute;
     top: 10%;
     right: -15%;
@@ -80,7 +82,7 @@
     opacity: 1;
 }
 
-#block2 img:first-child{
+#block2 img:first-child {
     position: absolute;
     bottom: 0;
     left: -2%;
@@ -89,7 +91,7 @@
     transition: 1s;
 }
 
-#block2 img:nth-child(2){
+#block2 img:nth-child(2) {
     position: absolute;
     top: 10%;
     right: 10%;
@@ -98,7 +100,7 @@
     opacity: 0;
 }
 
-#block3{
+#block3 {
     position: relative;
     z-index: 0;
     background-image: url(../img/blocks/mw2Back.png);
@@ -108,7 +110,7 @@
     background-attachment: fixed;
 }
 
-#block3 img:first-child{
+#block3 img:first-child {
     z-index: 1;
     opacity: 0;
     position: absolute;
@@ -118,7 +120,7 @@
     transition: 1s;
 }
 
-#block3.center img:first-child{
+#block3.center img:first-child {
     opacity: 1;
     position: absolute;
     bottom: 0;
@@ -127,7 +129,7 @@
     filter: drop-shadow(0 0 10px #00000080);
 }
 
-#block3 img:nth-child(2){
+#block3 img:nth-child(2) {
     filter: blur(15px);
     opacity: 0;
     position: absolute;
@@ -135,12 +137,12 @@
     top: 75%;
     left: 50%;
     filter: invert();
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 1s;
-    
+
 }
 
-#block3.center img:nth-child(2){
+#block3.center img:nth-child(2) {
     filter: blur(0);
     opacity: 1;
     position: absolute;
@@ -148,10 +150,10 @@
     top: 25%;
     left: 50%;
     filter: invert();
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-#block4{
+#block4 {
     position: relative;
     background-image: url(../img/blocks/ragnarok.png);
     background-size: cover;
@@ -159,7 +161,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#block4.center > img:first-child{
+
+#block4.center>img:first-child {
     position: absolute;
     top: -20%;
     left: -20%;
@@ -169,7 +172,8 @@
     opacity: 1;
     filter: drop-shadow(0 0 10px #00000080);
 }
-#block4.center > img:last-child{
+
+#block4.center>img:last-child {
     position: absolute;
     bottom: 5%;
     right: -25%;
@@ -177,7 +181,8 @@
     opacity: 0;
     transition: 1s;
 }
-#block4 img:first-child{
+
+#block4 img:first-child {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -186,7 +191,8 @@
     transition: 1s;
     opacity: 0;
 }
-#block4 img:last-child{
+
+#block4 img:last-child {
     position: absolute;
     bottom: 5%;
     right: -25%;
@@ -194,24 +200,29 @@
     opacity: 1;
     transition: 1s;
 }
-#block5{
+
+#block5 {
     overflow: hidden;
 }
-#block5.center > img:first-child{
+
+#block5.center>img:first-child {
     transition: 1s;
 }
-#block5.center > img:nth-child(2){
+
+#block5.center>img:nth-child(2) {
     filter: drop-shadow(0 0 10px #00000080);
     transition: 1s;
     opacity: 1;
 }
-#block5 img:first-child{
+
+#block5 img:first-child {
     position: absolute;
     top: 0%;
     left: -90%;
     width: 200%;
 }
-#block5 img:nth-child(2){
+
+#block5 img:nth-child(2) {
     position: absolute;
     bottom: 50%;
     width: 100%;
@@ -219,8 +230,9 @@
     opacity: 0;
     transition: 1s;
 }
+
 /* movies */
-#block6{
+#block6 {
     position: relative;
     background-image: url(../img/blocks/avatar/avatar.png);
     background-size: cover;
@@ -228,7 +240,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#block6 img:first-child{
+
+#block6 img:first-child {
     position: absolute;
     top: 20%;
     left: 30%;
@@ -237,7 +250,8 @@
     transition: 1s;
     opacity: 0;
 }
-#block6.center img:first-child{
+
+#block6.center img:first-child {
     opacity: 1;
     transition: 1s;
     left: 10%;
@@ -245,7 +259,8 @@
     width: 80%;
     opacity: 1;
 }
-#block7{
+
+#block7 {
     position: relative;
     background-image: url(../img/blocks/BladeRunner/Br2049.png);
     background-size: cover;
@@ -253,7 +268,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#block7 img:first-child{
+
+#block7 img:first-child {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -262,13 +278,15 @@
     opacity: 0;
     transition: 1s;
 }
-#block7.center img:first-child{
+
+#block7.center img:first-child {
     opacity: 1;
     transition: 1s;
     left: -10%;
     width: 120%;
 }
-#block8{
+
+#block8 {
     position: relative;
     background-image: url(../img/blocks/avengers/avengers.png);
     background-size: cover;
@@ -276,7 +294,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#block8 img:first-child{
+
+#block8 img:first-child {
     position: absolute;
     top: 20%;
     left: 25%;
@@ -285,16 +304,18 @@
     opacity: 0;
     transition: 1s;
 }
-#block8.center img:first-child{
+
+#block8.center img:first-child {
     opacity: 1;
     transition: 1s;
     top: 10%;
     left: 10%;
     width: 80%;
-    filter: drop-shadow(0 0 10px #00000080);
+    filter: drop-shadow(0 0 5px #00e1ff80);
+    filter: drop-shadow(0 30px 80px #000000cc);
 }
 
-#block9{
+#block9 {
     position: relative;
     background-image: url(../img/blocks/interestellar/interestelar.png);
     background-size: cover;
@@ -302,7 +323,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#block9 img:first-child{
+
+#block9 img:first-child {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -311,7 +333,8 @@
     opacity: 0;
     transition: 1s;
 }
-#block9.center img:first-child{
+
+#block9.center img:first-child {
     opacity: 1;
     transition: 1s;
     top: 10%;
@@ -319,7 +342,8 @@
     width: 100%;
 
 }
-#block10{
+
+#block10 {
     position: relative;
     background-image: url(../img/blocks/lionKing/lionKing.png);
     background-size: cover;
@@ -327,7 +351,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#block10 img:first-child{
+
+#block10 img:first-child {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -336,10 +361,76 @@
     opacity: 0;
     transition: 1s;
 }
-#block10.center img:first-child{
+
+#block10.center img:first-child {
     opacity: 1;
     transition: 1s;
     top: -10%;
     left: -23%;
     width: 150%;
+}
+
+@media (max-width: 768px) {
+    #block2.center>img:nth-child(2) {
+        position: absolute;
+        top: 10%;
+        right: -5%;
+        width: 110%;
+        transition: 1s;
+        filter: drop-shadow(0 0 10px #00000080);
+        opacity: 1;
+    }
+
+    #block4.center>img:first-child {
+        position: absolute;
+        top: -30%;
+        left: -9%;
+        width: 120%;
+        z-index: 3;
+        transition: 1s;
+        opacity: 1;
+        filter: drop-shadow(0 0 10px #00000080);
+    }
+
+    /* movies */
+    #block7.center img:first-child {
+        opacity: 1;
+        transition: 1s;
+        left: -5%;
+        width: 110%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    #block1 img:first-child {
+        position: absolute;
+        top: -10%;
+        right: -5%;
+        width: 50%;
+    }
+
+    #block2.center>img:nth-child(2) {
+
+        right: -5%;
+        width: 110%;
+
+    }
+
+    #block4.center>img:first-child {
+        top: -30%;
+        left: -6%;
+        width: 115%;
+    }
+
+    /* movies */
+
+    #block7.center img:first-child {
+        opacity: 1;
+        transition: 1s;
+        left: -5%;
+        top: 15%;
+        width: 110%;
+    }
 }
