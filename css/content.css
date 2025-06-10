@@ -103,7 +103,7 @@ footer{
     z-index: -1;
     height: 100dvh;
     width: 100dvw;
-    background-image: url(../img/games/minecraftIntro.png);
+    /*background-image: url(../img/games/nomeArquivo.png);*/
     background-size: cover;
     background-position: center 100%;
     background-repeat: no-repeat;
@@ -144,4 +144,46 @@ footer{
     gap: 10px;
     transform: scale(1.1);
     opacity: 1.0;
+}
+
+/* SELEÇÃO DE IMAGENS PARA OS BACKGROUNDS DE FORMA MANUL PARA EVITAR CSS INLINE */
+
+#minecraftImg{
+    background-image: url(../img/games/minecraftBackground.png);
+}
+
+#codImg{
+    background-image: url(../img/games/warzoneBackground.jpg);
+}
+
+#cyberpunkImg{
+    background-image: url(../img/games/cyberpunkBackground.png);
+}
+
+#rd2Img{
+    background-image: url(../img/games/rd2Background.png);
+}
+
+#gowImg{
+    background-image: url(../img/games/gowBackground.png);
+}
+
+#avatarImg{
+    background-image: url(../img/movies/avatarBackground.png);
+}
+
+#avengersImg{
+    background-image: url(../img/movies/avengersBackground.jpg);
+}
+
+#bladerunnerImg{
+    background-image: url(../img/movies/bladerunnerBackground.png);
+}
+
+#interestellarImg{
+    background-image: url(../img/movies/interestellarBackground.jpg);
+}
+
+#lionkingImg{
+    background-image: url(../img/movies/lionkingBackground.png);
 }

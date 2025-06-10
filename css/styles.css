@@ -73,6 +73,21 @@ header {
     color: white;
     text-shadow: 0 0 10px #00000080;
 }
+@media (max-width: 800px) {
+    #headerTittle{
+        font-size: 10em;
+    }
+}
+@media (max-width: 510px) {
+    #headerTittle{
+        font-size: 8em;
+    }
+}
+@media (max-width: 410px) {
+    #headerTittle{
+        font-size: 6em;
+    }
+}
 
 #headerTittle::after {
     z-index: -1;
@@ -129,7 +144,11 @@ header {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.7);
     visibility: hidden;
 }
-
+@media (max-width: 500px){
+    .navLi span{
+        display: none;
+    }
+}
 .navLi {
     position: relative;
     box-sizing: border-box;
@@ -146,6 +165,9 @@ header {
     transition: 0.5s;
     color: gray;
 }
+
+
+
 
 #navUl:hover>* {
     transform: scale(0.9);
@@ -195,7 +217,6 @@ main {
     position: relative;
     overflow: hidden;
 }
-
 /*main*/
 
 #mainContainer {
