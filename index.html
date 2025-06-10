@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/blocks.css">
     <link rel="stylesheet" href="./css/selector.css">
+    <link rel="stylesheet" href="./css/scrollReveal.css">
     <script src="https://kit.fontawesome.com/4ec170f2bb.js" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
     <script src="./js/selector.js"></script>
+    <script src="./js/scroll.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class = "blurs">
         <nav id="headerNav">
             <ul id="navUl">
                 <li class="navLi"><span>Home</span><i class="fa-solid fa-house"></i></li>
@@ -24,18 +26,16 @@
             </ul>
             <hr>
         </nav>
-        <h1 id="headerTittle">Ray Tracing</h1>
+        <h1 id="headerTittle" class="hidden">Ray Tracing</h1>
         <a href="" id="headerKnowMore"><span id="knowMoreSpan">Saiba mais</span></a>
     </header>
     <main>
         <div id="mainContainer">
             <section id="aboutContent" class="mainContent">
-                <h1>Ray Tracing</h1>
+                <h1 class="mainContent">Ray Tracing</h1>
                 <div class="containerR">
-                    <iframe width="65%"
-                        src="https://www.youtube.com/embed/reKTEm4Ej8s?autoplay=1&loop=1&controls=0&mute=1&disablekb=1&rel=0&showinfo=0&playlist=reKTEm4Ej8s"
-                        title="Cyberpunk 2077 Photorealistic Mods: You dont need a RTX 5090 for Ultra Realistic Graphics"
-                        frameborder="0" allow="autoplay;" class="hidden2" style="border-radius: 32px;"></iframe>
+                    <video src="https://www.youtube.com/watch?v=reKTEm4Ej8s" autoplay=1 loop=1 muted=1 width="50%"
+                        style="border-radius: 22px;" ></video>
                     <p>Ray tracing é uma técnica que simula como a luz real se comporta para criar imagens digitais.
                         Ela
                         "dispara" raios virtuais de luz pela cena e calcula como eles interagem com os objetos - se
@@ -44,13 +44,10 @@
                         de renderização. É usado em filmes de animação e jogos modernos, mas exige muito poder
                         computacional para funcionar em tempo real.</p>
                 </div>
-
-
-
             </section>
             <section id="worksContent" class="mainContent">
-                <h2>Como Funciona</h2>
-                <div class="modeBtns">
+                <h2 class="hidden">Como Funciona</h2>
+                <div id="modeBtns" class="hidden">
                     <button type="button" class="modeBtn active" data-mode="raster">Rasterização</button>
                     <button type="button" class="modeBtn" data-mode="rtx">Ray Tracing</button>
                     <button type="button" class="modeBtn" data-mode="path">Path Tracing</button>
@@ -92,9 +89,9 @@
                 </div>
             </section>
             <section id="usesContent" class="mainContent">
-                <h2>onde é usado</h2>
+                <h2 class="hidden">onde é usado</h2>
                 <br><br>
-                <h3>Video Games</h3>
+                <h3 class="hidden">Video Games</h3>
                 <div class="containerR">
                     <i class="fa-solid fa-arrow-left" onclick="blockNumberMinusGame()"></i>
                     <a href="minecraft.html" id="block1" class="blockGame" alt="minecraft">
@@ -122,7 +119,7 @@
                     </a>
                     <i class="fa-solid fa-arrow-right" onclick="blockNumberAddGame()"></i>
                 </div>
-                <h3>Filmes</h3>
+                <h3 class="hidden">Filmes</h3>
                 <div class="containerR">
                     <i class="fa-solid fa-arrow-left" onclick="blockNumberMinusMovie()"></i>
                     <a href="avatar.html" id="block6" class="blockMovie" alt="avatar">
@@ -136,7 +133,8 @@
 
                     </a>
                     <a href="interestellar.html" id="block9" class="blockMovie" alt="interestellar">
-                        <img src="./img/blocks/interestellar/InterstellarLogo.png" alt="InterstellarLogo" id="interstellarLogoImg">
+                        <img src="./img/blocks/interestellar/InterstellarLogo.png" alt="InterstellarLogo"
+                            id="interstellarLogoImg">
                     </a>
                     <a href="lionKing.html" id="block10" class="blockMovie" alt="linKing">
                         <img src="./img/blocks/lionKing/lionKingLogo.png" alt="linkingLogo" id="linkingLogoImg">
