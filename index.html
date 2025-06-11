@@ -17,12 +17,12 @@
 </head>
 
 <body>
-    <header class = "blurs">
+    <header class="blurs">
         <nav id="headerNav">
             <ul id="navUl">
-                <li class="navLi"><span>Home</span><i class="fa-solid fa-house"></i></li>
-                <li class="navLi"><span>About</span><i class="fa-solid fa-file-lines"></i></li>
-                <li class="navLi"><span>Menu</span><i class="fa-solid fa-bars"></i></li>
+                <li class="navLi"><a href="#usesContent"><span>Home</span></a><i class="fa-solid fa-house"></i></li>
+                <li class="navLi"><a href="#aboutContent"><span>About</span></a><i class="fa-solid fa-file-lines"></i>
+                </li>
             </ul>
             <hr>
         </nav>
@@ -33,9 +33,12 @@
         <div id="mainContainer">
             <section id="aboutContent" class="mainContent">
                 <h1 class="mainContent">Ray Tracing</h1>
-                <div class="containerR">
-                    <video src="https://www.youtube.com/watch?v=reKTEm4Ej8s" autoplay=1 loop=1 muted=1 width="50%"
-                        style="border-radius: 22px;" ></video>
+                <div class="containerR" style="user-select: none;">
+                    <iframe
+                        src="https://www.youtube.com/embed/reKTEm4Ej8s?autoplay=1&mute=1&loop=1&controls=0&playlist=reKTEm4Ej8s"
+                        allow="autoplay; encrypted-media" allowfullscreen="false" controls="0" modestbranding="1"
+                        style="aspect-ratio: 16/9; border-radius: 22px; width: 50%; border: none;"></iframe>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
                     <p>Ray tracing é uma técnica que simula como a luz real se comporta para criar imagens digitais.
                         Ela
                         "dispara" raios virtuais de luz pela cena e calcula como eles interagem com os objetos - se
@@ -86,7 +89,16 @@
                     <div id="contentBox">
                         <p></p>
                     </div>
+                    
                 </div>
+                <figure style="width: 50%; margin: 2vh auto 0; display: flex; flex-direction: column; align-items: center;">
+                    <img src="./img/raytracingImg.png" alt="imagem ilustrativa de Ray Tracing"
+                        class="hidden" id="rayTracingImg"
+                        style="width: 100%; height: auto; border-radius: 22px; filter: invert(.836);">
+                    <figcaption style="margin-top: 1em; font-size: 1em; color: #888;">
+                        imagem ilustrativa de Ray Tracing
+                    </figcaption>
+                </figure>
             </section>
             <section id="usesContent" class="mainContent">
                 <h2 class="hidden">onde é usado</h2>

@@ -63,6 +63,7 @@ header {
     margin-bottom: 15px;
 }
 
+
 #headerTittle {
     z-index: 0;
     position: relative;
@@ -130,7 +131,6 @@ header {
 #headerNav {
     width: 50%;
     scale: 1.1;
-
 }
 
 #navUl {
@@ -149,6 +149,12 @@ header {
         display: none;
     }
 }
+
+
+a, a:hover, a:active{
+    all: unset;
+}
+
 .navLi {
     position: relative;
     box-sizing: border-box;
