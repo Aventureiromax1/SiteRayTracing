@@ -8,7 +8,9 @@
 @import url(https://db.onlinewebfonts.com/c/6b22dc1202b5d1a57bcff9d24a1ea5da?family=Krona+One);
 @import url(https://db.onlinewebfonts.com/c/41cdafd19e156a1f74759f9c88b878ff?family=Google+Sans+Text+Regular);
 /* seleções sem id ou classe */
-
+iframe {
+    width: 80%;
+}
 
 
 body {
